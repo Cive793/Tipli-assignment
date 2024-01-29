@@ -16,12 +16,12 @@ body {
   background: white;
 }
 
-.header-navbar__logo {
+.navbar__logo {
   width: 66px;
   height: 32.421px;
 }
 
-.header__buttons {
+.navbar__buttons {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -36,7 +36,7 @@ body {
   cursor: pointer;
 }
 
-.header__button {
+.navbar__button {
   display: flex;
   height: 40px;
   padding: 0px 16px;
@@ -50,7 +50,7 @@ body {
   line-height: 24px;
 }
 
-.header__button--prominent {
+.navbar__button--prominent {
   background: var(--Orange-Gradient, radial-gradient(652.15% 474.45% at 26.41% 0.85%, #eb7701 0%, #f27c03 100%));
   font-weight: 500;
   color: white;
@@ -71,7 +71,7 @@ body {
   flex-direction: column;
 }
 
-.info__headingContainer {
+.info__container {
   gap: 40px;
   display: flex;
   flex-direction: column;
@@ -124,13 +124,13 @@ body {
   font-weight: 700;
 }
 
-.info__reviews {
+.info__reviews--desktop {
   display: flex;
   align-items: flex-start;
   gap: 12px;
 }
 
-.info__reviews--mobile {
+.main__info-reviews--mobile {
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -142,7 +142,7 @@ body {
   height: 32px;
 }
 
-.reviews__info {
+.reviews__rating {
   display: flex;
   padding-top: 4px;
   flex-direction: column;
@@ -177,7 +177,7 @@ body {
   align-items: center;
 }
 
-.form__banner {
+.form__form-banner {
   display: flex;
   padding: 0px 16px;
   justify-content: center;
@@ -207,7 +207,7 @@ body {
   font-weight: 800;
 }
 
-.form__content {
+.form__form-content {
   display: flex;
   padding: 40px 40px 24px 40px;
   flex-direction: column;
@@ -229,14 +229,14 @@ body {
   margin: 0;
 }
 
-.form-content__regArea {
+.form-content__reg-area {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.form-content__regEmailContainer {
+.form-content__reg-email-container {
   display: flex;
   width: 320px;
   flex-direction: column;
@@ -244,7 +244,7 @@ body {
   gap: 12px;
 }
 
-.form__regEmailInput {
+.form-content__reg-email-input {
   display: flex;
   height: 56px;
   padding: 0px 16px;
@@ -255,7 +255,6 @@ body {
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid #aeaeae;
-
   color: #909090;
   font-family: "Roboto";
   font-size: 16px;
@@ -264,7 +263,7 @@ body {
   line-height: 24px;
 }
 
-.form__regButton {
+.form-content__reg-button {
   display: flex;
   height: 56px;
   padding: 0px 16px;
@@ -274,7 +273,6 @@ body {
   align-self: stretch;
   background: var(--Orange-Gradient, radial-gradient(652.15% 474.45% at 26.41% 0.85%, #eb7701 0%, #f27c03 100%));
   border: none;
-
   color: white;
   font-family: Roboto;
   font-size: 16px;
@@ -284,14 +282,14 @@ body {
   letter-spacing: 0.32px;
 }
 
-.form-content__regAccountContainer {
+.form-content__reg-account-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
-.form-register__regOr {
+.form-account__reg-or {
   color: #54565a;
   font-family: Roboto;
   font-size: 14px;
@@ -301,21 +299,21 @@ body {
   margin: 0;
 }
 
-.form-register__regLogContainer {
+.form-account__reg-log-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 
-.form-register__regOptionsContainer {
+.form-account__reg-options-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
 }
 
-.form-register__regFB {
+.form-account__reg-FB {
   display: flex;
   width: 64px;
   height: 64px;
@@ -328,13 +326,13 @@ body {
   z-index: 99;
 }
 
-.registerFB__icon {
+.account-FB__icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.form-register__regAP {
+.form-account__reg-AP {
   display: flex;
   width: 64px;
   height: 64px;
@@ -347,13 +345,13 @@ body {
   z-index: 99;
 }
 
-.registerAP__icon {
+.account-AP__icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.form-register__regG {
+.form-account__reg-G {
   display: flex;
   width: 64px;
   height: 64px;
@@ -366,13 +364,13 @@ body {
   z-index: 99;
 }
 
-.registerG__icon {
+.account-G__icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.form-register__termsConditions {
+.form-register__terms-conditions {
   color: #aeaeae;
   text-align: center;
   font-family: Roboto;
@@ -384,14 +382,14 @@ body {
   margin: 0;
 }
 
-.form-register__termsConditions--underline {
+.form-register__terms-conditions--underline {
   text-decoration-line: underline;
   cursor: pointer;
   position: relative;
   z-index: 99;
 }
 
-.form-register__loginText {
+.form-register__login-text {
   color: #54565a;
   text-align: center;
   font-family: Roboto;
@@ -402,7 +400,7 @@ body {
   margin: 0;
 }
 
-.form-register__loginText--prominent {
+.form-register__login-text--prominent {
   color: #ec7700;
   font-family: Roboto;
   font-size: 12px;
@@ -462,14 +460,11 @@ body {
     line-height: 24px;
   }
 
-  .advatnage__text--prominent {
-  }
-
-  .info__reviews {
+  .info__reviews--desktop {
     display: none;
   }
 
-  .info__reviews--mobile {
+  .main__info-reviews--mobile {
     display: flex;
   }
 
@@ -477,7 +472,7 @@ body {
     align-self: stretch;
   }
 
-  .form__banner {
+  .form__form-banner {
     border: 2px solid var(--Green, #61a60e);
     background: var(--White, #fff);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
@@ -488,7 +483,7 @@ body {
     font-weight: 700;
   }
 
-  .form__content {
+  .form__form-content {
     max-width: -webkit-fill-available;
   }
 

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tipli</title>
+    <link rel="icon" type="image" href="assets/tipliT.png" />
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
@@ -12,17 +13,17 @@
   <body>
     <header class="header">
       <div class="navbar">
-        <a href="https://www.tipli.cz/" class="header-navbar__logo"> <img src="assets/tipli_logo.svg" alt="TipliLogo" title="Tipli" /> </a>
-        <div class="header__buttons">
-          <button class="button header__button">Přihlásit se</button>
-          <button class="button header__button header__button--prominent">Založit účet</button>
+        <a href="https://www.tipli.cz/" class="navbar__logo"> <img src="assets/tipli_logo.svg" alt="TipliLogo" title="Tipli" /> </a>
+        <div class="navbar__buttons">
+          <button class="button navbar__button">Přihlásit se</button>
+          <button class="button navbar__button navbar__button--prominent">Založit účet</button>
         </div>
       </div>
     </header>
 
     <div class="main">
       <div class="main__info">
-        <div class="info__headingContainer">
+        <div class="info__container">
           <h1 class="info__heading">
             <span class="info__heading--prominent">Dostávejte peníze zpět<br /></span>
             z nákupů v eshopech
@@ -43,9 +44,9 @@
             </div>
           </div>
         </div>
-        <div class="info__reviews">
+        <div class="info__reviews--desktop">
           <img class="reviews__fb" src="assets/fb.svg" />
-          <div class="reviews__info">
+          <div class="reviews__rating">
             <img class="reviews__stars" src="assets/stars.svg" />
             <p class="reviews__text">4,8/5 <span class="reviews__text reviews__text--subtle">(1 tis. hodnocení)</span></p>
           </div>
@@ -53,53 +54,53 @@
       </div>
 
       <div class="main__form">
-        <div class="form__banner">
+        <div class="form__form-banner">
           <p class="banner__text"><span class="banner__text--prominent">+ 300 Kč</span> BONUS K Novému účtu</p>
         </div>
-        <div class="form__content">
+        <div class="form__form-content">
           <h3 class="form-content__title">Začněte získavat peníze zpět</h3>
-          <div class="form-content__regArea">
-            <div class="form-content__regEmailContainer">
-              <input type="text" class="form__regEmailInput" name="email" autocomplete="new-email" placeholder="Zadejte váš email" />
-              <button class="button form__regButton">Založit účet ZDARMA</button>
+          <div class="form-content__reg-area">
+            <div class="form-content__reg-email-container">
+              <input type="text" class="form-content__reg-email-input" name="email" autocomplete="new-email" placeholder="Zadejte váš email" />
+              <button class="button form-content__reg-button">Založit účet ZDARMA</button>
             </div>
-            <div class="form-content__regAccountContainer">
-              <p class="form-register__regOr">nebo se zaregistrujte pomocí svého účtu</p>
-              <div class="form-register__regLogContainer">
-                <div class="form-register__regOptionsContainer">
-                  <div class="form-register__regFB">
+            <div class="form-content__reg-account-container">
+              <p class="form-account__reg-or">nebo se zaregistrujte pomocí svého účtu</p>
+              <div class="form-account__reg-log-container">
+                <div class="form-account__reg-options-container">
+                  <div class="form-account__reg-FB">
                     <a
                       href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=186459448452370&params%5Bdisplay%5D=%22popup%22&params%5Bdomain%5D=%22www.tipli.cz%22&params%5Bfallback_redirect_uri%5D=%22https%3A%5C%2F%5C%2Fwww.tipli.cz%5C%2F%22&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22f2224867-756b-4a08-b6cd-a03f943a09a4%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fstaticxx.facebook.com%5C%2Fx%5C%2Fconnect%5C%2Fxd_arbiter%5C%2F%3Fversion%3D46%23cb%3Df18dd1c58e3e22462%26domain%3Dwww.tipli.cz%26is_canvas%3Dfalse%26origin%3Dhttps%5Cu00253A%5Cu00252F%5Cu00252Fwww.tipli.cz%5Cu00252Ff0a2f148da39b24bd%26relation%3Dopener.parent%26frame%3Dfb9b1e6753191e6f6%22&params%5Bref%5D=%22LoginButton%22&params%5Bresponse_type%5D=%22signed_request%2Ctoken%2Cgraph_domain%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22public_profile%22%2C%22email%22%5D&params%5Bsdk%5D=%22joey%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22public_profile%22%2C%22email%22%2C%22baseline%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_joey%2Clogin_platformization_read%22&params%5Bis_limited_login_shim%5D=false&params%5Bshim_denied_scopes%5D=%5B%5D&source=gdp_delegated"
                     >
-                      <img class="registerFB__icon" src="assets/fb.svg" alt="Facebook" title="Facebook" />
+                      <img class="account-FB__icon" src="assets/fb.svg" alt="Facebook" title="Facebook" />
                     </a>
                   </div>
-                  <div class="form-register__regAP">
+                  <div class="form-account__reg-AP">
                     <a
                       href="https://appleid.apple.com/auth/authorize?client_id=cz.tipli&redirect_uri=https%3A%2F%2Fwww.tipli.cz%2Ffront.sign%2Fapple-callback&response_type=code%20id_token&state=1&scope=email&response_mode=form_post&frame_id=87471425-0cdd-4780-8c80-e5784671ff53&m=12&v=1.5.5"
                     >
-                      <img class="registerAP__icon" src="assets/apple.svg" alt="Apple" title="Apple" />
+                      <img class="account-AP__icon" src="assets/apple.svg" alt="Apple" title="Apple" />
                     </a>
                   </div>
-                  <div class="form-register__regG">
+                  <div class="form-account__reg-G">
                     <a
                       href="https://accounts.google.com/gsi/select?client_id=179697024891-eqjtkln3k2v41olj0phjrksaftnjje3a.apps.googleusercontent.com&auto_select=false&ux_mode=redirect&login_uri=https%3A%2F%2Fwww.tipli.cz%2Ffront.sign%2Fgoogle-callback%3FgoogleBackLink%3Dhttps%253A%252F%252Fwww.tipli.cz%252F&ui_mode=card&context=signin&as=8tmNLkA7%2FLvqEojxPcAzuQ&g_csrf_token=1275bff11a32cbe4&origin=https%3A%2F%2Fwww.tipli.cz"
                     >
-                      <img class="registerG__icon" src="assets/google.svg" alt="Google" title="Google" />
+                      <img class="account-G__icon" src="assets/google.svg" alt="Google" title="Google" />
                     </a>
                   </div>
                 </div>
-                <p class="form-register__termsConditions">Registrací souhlasíte s podmínkami užití a se <span class="form-register__termsConditions--underline">zpracováním osobních údajů.</span></p>
-                <p class="form-register__loginText">Máte již účet? <span class="form-register__loginText--prominent">Přihlaste se</span></p>
+                <p class="form-register__terms-conditions">Registrací souhlasíte s podmínkami užití a se <span class="form-register__terms-conditions--underline">zpracováním osobních údajů.</span></p>
+                <p class="form-register__login-text">Máte již účet? <span class="form-register__login-text--prominent">Přihlaste se</span></p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <img class="main__oslik" src="assets/tipli-oslik.svg" />
-      <div class="info__reviews--mobile">
+      <div class="main__info-reviews--mobile">
         <img class="reviews__fb" src="assets/fb.svg" />
-        <div class="reviews__info">
+        <div class="reviews__rating">
           <img class="reviews__stars" src="assets/stars.svg" />
           <p class="reviews__text">4,8/5 <span class="reviews__text reviews__text--subtle">(1 tis. hodnocení)</span></p>
         </div>
